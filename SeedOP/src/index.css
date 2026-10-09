@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  --background: #F5F7FA;
+  --primary-text: #333333;
+  --input-border:#E0E0E0;
+  --buttons-primary:#1E88E5;
+  --buttons-secondary:#329935;
+  --button-hover:#0056D2;
+  --icon-color:#FF9800;
+}
+body{
+  overflow: auto;
+  overflow-x: hidden;
+}
+input::placeholder{
+  color: #727272;
+}
+input{
+  border: #329935 1px solid;
+  outline: none;
+}
+.seedfields input{
+  padding: 4px 8px;
+  border-radius: 0.75rem;
+  font-size: 14px;
+  line-height: 20px;
+}
+.seedfields{
+  grid-template-columns: repeat(3,1fr);
+}
+.seedfields div{
+  width: 16vw;
+  display: flex;
+  gap: 8px;
+}
+.seedfields .big-div{
+  width: 17vw;
+}
+.Toastify__toast {
+  background-color: #0c1727;
+}
+img:hover{
+  transform: scale(1.125);
+}
+img:active{
+  transform: scale(1.25);
+}
+
+label,
+input[type="radio"]{
+  cursor: pointer;
+}
+
+@media(max-width:910px){
+  .content .main-header{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  img{
+    width: 24px;
+  }
+}
+@media(max-width:800px){
+  .main-header .text-center{
+    width: 40%;
+  }
+}
+@media(max-width:576px){
+  .main{
+    width: 90vw;
+  }
+  .main-header .text-center{
+    font-size: 13px;
+  }
+  .view-modal{
+    width: 75%;
+  }
+  .edit-modal{
+    width: 70%;
+  }
+  .actions , .walletname{
+    padding:0 8px
+  }
+  .main-header{
+    padding: 8px 8px;
+  }
+  .main-header .text-center{
+    font-size: 12px;
+    width: 45%;
+  }
+}
+@media(max-width:425px){
+  .main{
+    width: 95vw;
+    font-size: 14px;
+  }
+  .form{
+    width: 85vw;
+  }
+  .form #walletname{
+    width: 75vw;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 6px;
+  }
+  .form .seedfields div{
+    width: 90%;
+  }
+  .actions , .walletname{
+    padding:0 8px
+  }
+  .main-header{
+    padding: 8px 8px;
+  }
+  .main-header .text-center{
+    font-size: 12px;
+    width: 45%;
+  }
+  .edit-modal{
+    width: 90%;
+  }
+  .edit-modal .seedfields{
+    width: 100%;
+  }
+  .edit-modal > .seedfields div span{
+    width: 12px;
+  }
+  .edit-modal > .seedfields div{
+    width: 75%;
+  }
+  .edit-modal .keyfield input{
+    width: 50vw;
+  }
+}
+@media(max-width:375px){
+  .main,
+  .main-header{
+    font-size: 12px;
+  }
+}
+@media(max-width:330px){
+  img{
+    width: 18px;
+  }
+  .header .head{
+    font-size: 12px;
+  }
+}
